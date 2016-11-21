@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      My Todo App
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon only (click)="addTodo()"><ion-icon name="add"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list no-lines>
+    <button ion-item (click)="editTodo(todo)" *ngFor="let todo of dataService.todos">
+      {{todo.description}}
+    </button>
+  </ion-list>
+</ion-content>
+

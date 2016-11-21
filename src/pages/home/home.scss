@@ -1,0 +1,14 @@
+//apply css to both ios && md in spacific page 
+.ios, .md{
+    page-home {
+        //styling the buttons inside the list only
+        ion-list button{
+            background-color: #fff;
+            width:96%;
+            margin:2%;
+            font-size:1.2em;
+            font-weight: bold;
+        }
+    }
+}
+
